@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>리조트 소개</title>
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- SEMENTIC UI -->
+<link rel="stylesheet" type="text/css" href="resources/semantic.css">
+<script src="resources/semantic.js"></script>
+<!-- MAIN STYLES -->
+<link type="text/css" rel="stylesheet" href="resources/mainstyle.css">
+<!-- CAROUSEL IMAGE SIZE -->
+<style type="text/css">		
+	.carousel-item { 
+		position: relative; 
+		padding-top: 40%; /* 1:1 ratio */ 
+		overflow: hidden; 
+	} 
+	#main1, #main2, #main3 { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		right: 0; 
+		bottom: 0; 
+		max-width: 100%; 
+		height: auto; 
+	}
+	.list-unstyled {
+		column-count: 3;
+		padding-left: 10px;
+	}
+	.evenitem {
+      background-color: #645e5e;
+      color: #fff;      
+    }
+    .odditem {
+      background-color: #ebebeb;
+    }
+    
+    .evenodd {
+    	padding-left: 100px;
+    	padding-right: 100px;
+    }
+</style> 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#list > .evenodd:nth-child(2n)').addClass('evenitem');
+		$('#list > .evenodd:nth-child(2n+1)').addClass('odditem');
+	})
+</script> 
+</head>
+<body>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/main1.jpg" class="d-block w-100" alt="..." id="main1">
+    </div>
+    <div class="carousel-item">
+      <img src="image/main2.jpg" class="d-block w-100" alt="..." id="main2">
+    </div>
+    <div class="carousel-item">
+      <img src="image/main3.jpg" class="d-block w-100" alt="..." id="main3">
+    </div>
+  </div>
+</div>
+<div id="list">
+	<div class="evenodd">
+		<br>
+		<h1 class="display-1">나누리조트&스파</h1>
+		<p class="lead" style="color: black;">
+		NANURESORT는 무료 Wi-Fi 접속 설비 및 스파 센터를 보유하고있어 코 창 (Ko Chang)의 숙박 시설을 제공합니다. 
+		이 리조트는 야외 수영장을 갖추고 있으며 산의 전망을 즐기실 수 있습니다. 레스토랑에서 식사를 즐기시거나 바에서 음료를 즐기실 수 있습니다. 
+		구내 전용 주차장의 무료 이용이 가능합니다. 일부 객실에는 편의를 위해 좌석 공간이 있습니다. 일부 객실에는 수영장 또는 정원의 전망이 있습니다. 
+		모든 객실에는 전용 욕실이 딸려 있습니다. 목욕 가운과 슬리퍼가 제공됩니다. 평면 TV가 제공됩니다. 호텔에 선물 가게가 있습니다. 
+		카이 배 해변 (Kai Bae Beach)은 Aana Resort & Spa에서 4.2km, 코창 국립 공원 (Koh Chang National Park)에서 5km 거리에 있습니다. 
+		트랏 공항 (Trat Airport)은 24km 떨어져 있습니다.</p>
+		<br>
+	</div>
+	<div class="evenodd" id="multi">
+		<br>
+		<h1 class="display-1">편의 용품</h1>
+		<ul class="list-unstyled">
+		  <li>아웃도어
+		    <ul>
+		      <li>야외 수영장(연중무휴)</li>
+		      <li>일광욕 테라스</li>
+		      <li>야외수영장</li>
+		      <li>테라스</li>
+		      <li>정원</li>
+		    </ul>
+		  </li>
+		  <li style="padding-top: 15px;">애완동물
+		    <ul>
+		      <li>애완동물 동반이 불가능합니다.</li>	      
+		    </ul>
+		  </li>
+		  <li style="padding-top: 15px;">액티비티
+		    <ul>
+		      <li>쿠킹클래스</li>
+		      <li>전용 해변 공간</li>
+		      <li>스노클링</li>
+		      <li>다이빙</li>
+		      <li>카누</li>
+		      <li>마사지</li>
+		      <li>스파/웰빙</li>
+		      <li>낚시</li>
+		    </ul>
+		  </li>
+		  <li style="padding-top: 15px;">식음료
+		    <ul>
+		      <li>키즈밀</li>
+		      <li>바</li>
+		      <li>레스토랑</li>
+		    </ul>
+		  </li>
+		  <li style="padding-top: 15px;">인터넷
+		    <ul>
+		      <li>Wi-Fi(은)는 호텔 전 구역에서 무료입니다.</li>	      
+		    </ul>
+		  </li>
+		  <li style="padding-top: 5px;">수영장/웰빙
+		    <ul>
+		      <li>수영장</li>	 
+		      <li>수영장 바</li>	
+		      <li>수영장 비치 타월</li>	 
+		      <li>전망 좋은 수영장</li>	    
+		    </ul>
+		  </li>
+		  <li style="padding-top: 5px;">수영장/웰빙
+		    <ul>
+		      <li>수영장</li>	 
+		      <li>수영장 바</li>	
+		      <li>수영장 비치 타월</li>	 
+		      <li>전망 좋은 수영장</li>	    
+		    </ul>
+		  </li>
+		</ul>
+		<br>
+	</div>	
+	<div class="evenodd">
+		<br>
+		<h1 class="display-1">후기</h1>
+		<div class="ui statistics" style="align: center;">
+		  <div class="statistic">
+		    <div class="value">
+		      122,000
+		    </div>
+		    <div class="label">
+		      Visits
+		    </div>
+		  </div>
+		  <div class="statistic">
+		    <div class="value">
+		      31,200
+		    </div>
+		    <div class="label">
+		      Likes
+		    </div>
+		  </div>
+		  <div class="statistic">
+		    <div class="value">
+		      9,500
+		    </div>
+		    <div class="label">
+		      Revisits
+		    </div>
+		  </div>
+		</div>
+		<br>
+	</div>
+	
+	<div class="evenodd">
+		<br>
+		<h1 class="display-4">나누리조트&스파</h1>
+		<p class="lead">
+		+82 31 696 8800</p>
+		<p class="lead">
+		5, Hwangsaeul-ro 329beon-gil, Bundang-gu,<br>
+		Seongnam-si, Gyeonggi-do, Republic of Korea</p>
+		<p class="lead">
+		nurring@gmail.com</p>
+		<p class="lead" >
+		<img src="image/tripadvisor.png">
+		<img src="image/twitter.png"></p>
+		<br>
+	</div>
+</div>
+<script>
+	$('.carousel').carousel({
+		  interval: 2000
+		})
+</script>
+</body>
+</html>

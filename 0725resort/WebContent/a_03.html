@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>reasonable룸</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link type="text/css" rel="stylesheet" href="./resources/mainstyle.css">
+<link type="text/css" rel="stylesheet" href="./resources/a_01style.css">
+<style type="text/css">
+#contents {
+    padding: 0;
+    background-color: #ebebeb;
+}
+</style>
+</head>
+<body>
+<div style="height:103px; background-color:#200000;">
+</div>
+<div class="container">
+<h1 class="display-4" style="text-align:center;">합리적인 룸 - 디럭스룸</h1>
+  <div class="mySlides">
+    <img src="image/reasonable1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <img src="image/reasonable2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <img src="image/reasonable3.jpg" style="width:100%">
+  </div>    
+  <div class="mySlides">
+    <img src="image/reasonable4.jpg" style="width:100%">
+  </div>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="image/reasonable1.jpg" style="width:100%" onclick="currentSlide(1)" alt="테라스 전경1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/reasonable2.jpg" style="width:100%" onclick="currentSlide(2)" alt="침실1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/reasonable3.jpg" style="width:100%" onclick="currentSlide(3)" alt="테라스 전경2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/reasonable4.jpg" style="width:100%" onclick="currentSlide(4)" alt="테라스 후경1">
+    </div>    
+  </div>
+</div>
+
+<div class="container">
+<div class="jumbotron-fluid">
+  <h1 class="display-4">객실 정보</h1>
+  <p class="lead">42 평방 미터의 AANA Deluxe에는 42 개의 디럭스 룸과 2 개의 저층 건물이 있습니다. <br>
+  강변 수영장, 정원 및 에메랄드 호수가있는 에메랄드 산호초, 수영장 전망 또는 정원의 전망을 갖추고 있습니다.</p>
+  <hr class="my-4">
+  <p class="h5">객실 내 시설</p>
+<p>- 무선 인터넷</p>
+<p>- 데이 베드 및 식탁이있는 대형 전용 발코니</p>
+<p>- 작업 및 드레싱 테이블</p>
+<p>- IDD 전화</p>
+<p>- 차 / 커피 메이커</p>
+<p>- 온수 / 냉수 샤워 시설을 갖춘 욕조</p>
+<p>- 헤어 드라이기</p>
+<p>- 개별 조절 식 에어컨 - 헤어 드라이기</p>
+<p>- 21 인치 평면 TV, 위성 방송 40 채널</p>
+<p>- 전자 금고</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

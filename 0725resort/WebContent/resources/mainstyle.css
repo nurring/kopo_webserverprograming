@@ -1,0 +1,64 @@
+html {
+	  font-size: 16px;
+	}
+body {
+	font-size: 16px;	
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+#contents {
+  padding: 0;
+}
+}
+.container-fluid {
+	<!--background: #200000;-->	
+}
+#menu {
+	height: 150px;
+	background: #200000;
+	
+}
+.btn-group, btn-group-toggle {	   
+	padding-top:80px; 
+	padding-left:10px;
+	display: flex;  		    
+}
+.btn-group label {
+	background-color: #200000;		
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #200000;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #422f2f;
+    border-color: #422f2f;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #422f2f;
+    border-color: #422f2f;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #422f2f;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #ffffff;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #200000;}
+
+#introduce:hover .dropdown-content {display: block; margin-top:8px; }
+#location:hover .dropdown-content {display: block; margin-top:8px; }
+#spots:hover .dropdown-content {display: block; margin-top:8px; }
+#booking:hover .dropdown-content {display: block; margin-top:8px; }
+#news:hover .dropdown-content {display: block; margin-top:8px; }
