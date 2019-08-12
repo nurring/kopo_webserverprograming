@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>성적 조회 후 정정/삭제</title>
+<h1>성적 조회 후 정정/삭제</h1>
+</head>
+<style>
+	table{
+		margin: 10px;
+		border-style: hidden;
+        border-collapse: collapse;
+	}
+</style>
+<body>
+
+	<form method="post" action= "showREC.jsp" target="selectframe"> 		
+	    <table >
+	    	<tr>
+	    		<td>조회할 학번</td>
+	    		<td><input type="number" name='studentid'></td>
+	    		<td colspan="2" align="right"><input type="submit" value="조회"></td>
+	    	</tr>    	
+	    </table>
+	</form>
+
+<iframe src="./showREC.jsp" style="height: 50vh; width: 80vw;" name="selectframe"></iframe>
+</body>
+</html>
